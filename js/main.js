@@ -35,3 +35,8 @@ const search = document.querySelector('#search');
 select.addEventListener('change',  filterData);
 btn.addEventListener('click', clearFilter);
 search.addEventListener('keyup', searchName);
+
+function listproducts(){
+    let products = document.querySelectorAll('.product');
+    
+}
