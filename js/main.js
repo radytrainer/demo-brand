@@ -35,3 +35,11 @@ const search = document.querySelector('#search');
 select.addEventListener('change',  filterData);
 btn.addEventListener('click', clearFilter);
 search.addEventListener('keyup', searchName);
+
+
+
+function removeProduct(event){
+    btn.event.target.closest('.product').remove()
+
+}
+btn.addEventListener('click', removeProduct)
