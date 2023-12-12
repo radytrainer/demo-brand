@@ -35,3 +35,9 @@ const search = document.querySelector('#search');
 select.addEventListener('change',  filterData);
 btn.addEventListener('click', clearFilter);
 search.addEventListener('keyup', searchName);
+
+/// crete Category
+function addCcategory(){
+ let category=tr.firstElementChild.lastElementChild.textContent;
+ 
+}
