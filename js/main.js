@@ -35,3 +35,16 @@ const search = document.querySelector('#search');
 select.addEventListener('change',  filterData);
 btn.addEventListener('click', clearFilter);
 search.addEventListener('keyup', searchName);
+
+// --------------------------
+/**
+ * Add product to localstorage
+ */
+function addProduct() {
+    let data = {
+        id: 1,
+        products: [],
+        category: [],
+    }
+    localStorage.setItem('product', JSON.stringify(data));
+}
