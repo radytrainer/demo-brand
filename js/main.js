@@ -37,9 +37,20 @@ btn.addEventListener('click', clearFilter);
 search.addEventListener('keyup', searchName);
 
 
-
 function removeProduct(event){
     btn.event.target.closest('.product').remove()
 
 }
 btn.addEventListener('click', removeProduct)
+// --------------------------
+/**
+ * Add product to localstorage
+ */
+function addProduct() {
+    let data = {
+        id: 1,
+        products: [],
+        category: [],
+    }
+    localStorage.setItem('product', JSON.stringify(data));
+}
